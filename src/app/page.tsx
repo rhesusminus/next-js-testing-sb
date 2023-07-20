@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { css } from '../../styled-system/css'
 
 export default function Home() {
-
   return (
     <>
       <p className={css({ fontSize: '2xl', fontWeight: 'bold' })}>
@@ -14,7 +13,6 @@ export default function Home() {
           <Link href="/people">People</Link>
         </li>
       </ul>
-      
     </>
   )
 }
