@@ -1,12 +1,14 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import styles from './layout.module.css'
+import { container } from '../../styled-system/patterns'
+import { cx } from '../../styled-system/css'
+import Header from '@/components/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Jeppistä',
+  title: 'Frontpage',
   description: 'Testing Next.js and Panda (🐼) CSS'
 }
 
@@ -17,8 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className={styles.main}>{children}</main>
+      <body className={cx(inter.className, container())}>
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   )
