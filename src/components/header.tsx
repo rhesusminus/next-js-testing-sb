@@ -9,7 +9,6 @@ const listStyles = css({})
 export default function Header() {
   return (
     <header>
-      Header
       <ul className={hstack({ gap: '6' })}>
         <li>
           <Link href="/">Frontpage</Link>

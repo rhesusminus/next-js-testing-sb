@@ -1,4 +1,3 @@
-import '../globals.css'
 import type { Metadata } from 'next'
 import { css } from '../../../styled-system/css'
 import { Inter } from 'next/font/google'
