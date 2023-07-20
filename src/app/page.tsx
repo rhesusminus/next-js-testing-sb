@@ -8,11 +8,6 @@ export default function Home() {
       <p className={css({ fontSize: '2xl', fontWeight: 'bold' })}>
         Next.js testing
       </p>
-      <ul>
-        <li>
-          <Link href="/people">People</Link>
-        </li>
-      </ul>
     </>
   )
 }
